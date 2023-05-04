@@ -1,0 +1,232 @@
+
+:root {
+    --primary-color: brown;
+    --secondary-color: blue;
+    --highlight-color: aquamarine;
+    
+}
+
+
+
+.page {
+    display: grid;
+    width: 100%;
+    height: 100%;
+    grid-template-areas:
+    "head head2 head3"
+    "nav  main main2"
+    "nav  sec sec"
+    "foot foot foot";
+    grid-template-rows: 10fr 30fr 30fr 5fr;
+    grid-template-columns: 10fr 25fr 15fr;
+    column-gap: 10px;
+    row-gap: 10px;
+
+
+
+}
+.page > header {
+  grid-area: head;
+  background-color: #FFF2F1;
+  margin-top: -10px;
+  
+  
+}
+
+.about{
+  font-size: 60px;
+  
+  
+  
+}
+
+#back {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 10px;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+
+
+.Weboweek {
+  font-size: 60px;
+  
+ 
+  
+}
+
+.page > header2 {
+  grid-area: head2;
+  background-color: #FFF2F1;
+  text-align:center;
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: -10px;
+  
+  
+}
+
+.page > header3 {
+  grid-area: head3;
+  background-color: #FFF2F1;
+  text-align: center;
+  font-size: 30px;
+  font-weight: 800;
+  margin-top: -10px;
+  
+}
+
+#canvas {
+border: 2px solid black;
+background-color: white ;
+margin-top: auto;
+}
+
+#canvas-container {
+  float: left;
+}
+
+iframe {
+  float: left;
+}
+
+
+
+
+.amongus-image {
+  width: 50px;
+  height: 50px;
+}
+
+h5 {
+  font-size: 15px;
+  margin-top: auto;
+  
+}
+
+.page > nav {
+    grid-area: nav;
+    background-color: #C7C2FF;
+    
+  }
+
+  .page > main {
+    grid-area: main;
+    background-color: #211a1d;
+  }
+    
+  .slopetext {
+    background-color: white;
+    margin-top: auto;
+    text-align: center;
+  }
+
+  
+
+  .marq {
+        
+        height: 300px;
+            background-color: #ffffff;
+            outline: #D6FF79;
+            
+  }
+  
+  .page > main2 {
+    grid-area: main2;
+    background-color: #C7C2FF;
+    
+    
+    
+  }
+
+
+  
+  
+
+  .page > under {
+    grid-area: sec;
+    background-color: #cad5ca;
+  }
+
+  .page > footer {
+    grid-area: foot;
+    background-color: #211a1d;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  #background {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 33.33%;
+    height: 100%;
+    background-color: #c7c2ff;
+  }
+  
+  #background:after {
+    content: "";
+    display: block;
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 66.67%;
+    height: 100%;
+    background-color: #cad5ca;
+  }
+  
+  #container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    height: 60%;
+    background-color: white;
+    display: flex;
+    border: 2px solid black ;
+  }
+  
+  #text {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem;
+    border: 2px solid black;
+  }
+  
+  #text h1 {
+    font-size: 3rem;
+    margin: 0;
+    text-decoration: underline;
+    
+  }
+  
+  #text p {
+    font-size: 1rem;
+    margin: 0;
+    margin-top: 0.2rem;
+    font-style:unset;
+    
+  }
+
+  #text p1{
+    font-size: 1rem;
+    margin: 0;
+    margin-top: 1rem;
+  }
+  
+  #image {
+    flex: 1;
+    background-image: url("Hotpot.png");
+    background-size: cover;
+    background-position: center;
+  }
