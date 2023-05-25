@@ -58,6 +58,11 @@
   
 }
 
+#backToStart {
+  font-size: 30px;
+  background-color: white;
+}
+
 .page > header2 {
   grid-area: head2;
   background-color: #FFF2F1;
